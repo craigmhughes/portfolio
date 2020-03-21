@@ -24,7 +24,7 @@ const Camera = () => {
 export default function RenderCanvas(){
 
     const [props, set] = useSpring(() => ({
-        scale: [1, 1, 1],
+        scale: [0, 0, 0],
         rotation: [0, 0, 0],
         config: { mass: 10, tension: 1000, friction: 300, precision: 0.00001 }
     }));
@@ -59,7 +59,7 @@ export default function RenderCanvas(){
               }}>
             <Camera/>
             <ambientLight intensity={0.5} />
-            <spotLight intensity={0.5} position={[20, 5, 10]} angle={0.2} penumbra={1} castShadow />
+            <spotLight intensity={0.85} position={[20, 5, 10]} angle={0.2} penumbra={1} castShadow />
 
             <animated.mesh {...props}>
                 <PadHousing/>
