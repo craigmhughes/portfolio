@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { animated } from 'react-spring/three';
 
 const PadHousing = ()=>{
     const [model, setModel] = useState();

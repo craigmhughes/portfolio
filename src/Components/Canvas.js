@@ -4,8 +4,11 @@ import { Canvas, useLoader, useFrame, useUpdate, useThree } from 'react-three-fi
 import { useSpring, config, animated } from 'react-spring/three'
 
 import PadHousing from './PadHousing'
+import Pad from './Pad'
+
+
 /**
- * Game camera, placed looking at center.
+ * Camera, placed looking at center.
  */
 const Camera = () => {
     const three = useThree();
@@ -24,7 +27,24 @@ export default function RenderCanvas(){
         scale: [1, 1, 1],
         rotation: [0, 0, 0],
         config: { mass: 10, tension: 1000, friction: 300, precision: 0.00001 }
-      }))
+    }));
+
+    const [pads, setPads] = useState(null);
+    
+    if(!pads || pads.length < 16){
+        let padList = [];
+        let row = 0;
+        let col = 0
+
+        for(let i = 0; i < 16; i++){
+            row += i % 4 === 0 && i > 0 ? 1 : 0;
+            col = i % 4 === 0 ? 0 : col + 1;
+            padList.push(<Pad key={i} col={col} row={row}/>);
+        }
+
+        setPads(padList);
+    }
+    
 
     return(
         <Canvas onCreated={({ gl }) => ((gl.shadowMap.enabled = true), (gl.shadowMap.type = THREE.PCFSoftShadowMap))}
@@ -43,6 +63,7 @@ export default function RenderCanvas(){
 
             <animated.mesh {...props}>
                 <PadHousing/>
+                {pads}
             </animated.mesh>
             
         </Canvas>
