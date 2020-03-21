@@ -6,7 +6,7 @@ const PadHousing = ()=>{
 
     useEffect(()=>{
         if(!model){
-        new GLTFLoader().load(require("../beat-pad.gltf"), (obj)=>{
+        new GLTFLoader().load(require("../../beat-pad.gltf"), (obj)=>{
             obj.scene.traverse((child)=>{
                 if (!child.isMesh) return;
                 child.material.wireframe = true;
