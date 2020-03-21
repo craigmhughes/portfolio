@@ -39,7 +39,7 @@ export default function RenderCanvas(){
         for(let i = 0; i < 16; i++){
             row += i % 4 === 0 && i > 0 ? 1 : 0;
             col = i % 4 === 0 ? 0 : col + 1;
-            padList.push(<Pad key={i} col={col} row={row}/>);
+            padList.push(<Pad key={i} col={col} row={row} id={i}/>);
         }
 
         setPads(padList);

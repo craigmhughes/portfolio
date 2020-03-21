@@ -6,13 +6,21 @@ import { useSpring, a } from 'react-spring/three';
  * 
  * @param {col, row} = Defines where pad is in grid
  */
-const Pad = ({col, row})=>{
+const Pad = ({col, row, id})=>{
 
-    
+    const padSamples = [
+        "bass_1", "bass_2", "bass_3", "ride_1",
+        "precussion_1", "precussion_2", "precussion_3", "snap_1",
+        "snap_2", "snare_1", "hat_1", "hat_2",
+        "kick_1", "kick_2", "clap_1", "clap_2"
+    ];
+
+    const sound = new Audio(require(`../../Samples/${padSamples[id]}.wav`));
 
     const [hit, setHit] = useState(false);
     const handleClick = ()=>{
         setHit(true);
+        sound.play();
         setTimeout(()=>setHit(false), 500);
     };
 
