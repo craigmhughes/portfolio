@@ -44,6 +44,12 @@ export default function RenderCanvas(){
 
         setPads(padList);
     }
+
+    setTimeout(()=>{
+        set({
+            scale: [1,1,1]
+        })
+    }, 1000);
     
 
     return(
@@ -53,7 +59,7 @@ export default function RenderCanvas(){
                 const y = -(clientY / window.innerHeight) * 2 + 1
         
                 set({
-                  scale: [0.75 - y * 0.1, 0.75 - y * 0.1, 0.75],
+                  scale: [0.9 - y * 0.1, 0.9 - y * 0.1, 0.9],
                   rotation: [-y * (Math.PI / 3) * 0.3, x * (Math.PI / 3) * 0.3, 0]
                 })
               }}>
