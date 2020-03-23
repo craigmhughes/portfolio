@@ -24,7 +24,7 @@ export default function Home(){
                 Hit a pad and make sure your sound is on!
                 </p>
                 <section className="Home-slide__link-list">
-                    <Link to="/">View CV</Link>
+                    <a href={require("../assets/cv.pdf")}>View CV</a>
                     <Link to="/">View Work</Link>
                 </section>
 
