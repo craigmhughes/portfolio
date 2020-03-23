@@ -15,7 +15,7 @@ const Camera = () => {
     const camera = three.camera;
     camera.position.z = 2.5;
     camera.position.y = 0;
-    three.gl.setSize(window.innerWidth, window.innerHeight);
+    three.gl.setSize(window.innerWidth > 800 ? window.innerWidth * 0.6 : window.innerWidth, window.innerWidth > 800 ? window.innerHeight : 400);
 
     return null;
 };

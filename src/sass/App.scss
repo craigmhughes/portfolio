@@ -1,0 +1,11 @@
+@import './Home.scss';
+
+canvas {
+    width: 100%;
+    background: #e3e3e3;
+    filter: invert(1);
+}
+
+.App, #root, body {
+    min-height: 100vh;
+}

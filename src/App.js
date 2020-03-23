@@ -1,14 +1,26 @@
 import React from 'react';
-import './App.css';
+import {Route, BrowserRouter as Router, Switch, withRouter} from 'react-router-dom';
+import {AnimatePresence} from 'framer-motion';
 
-import RenderCanvas from './Components/Canvas';
 
-function App() {
-  return (
-    <div className="App">
-      <RenderCanvas />
-    </div>
-  );
+import "./App.css";
+import Home from './Components/Home';
+
+class App extends React.Component {
+  static displayName = App.name;
+
+
+  render(){
+    return (
+      <Router className="App" basename={`${process.env.PUBLIC_URL}/`}>
+        <AnimatePresence exitBeforeEnter>
+          <Switch location={this.props.history} key={this.props.history}>
+            <Route exact path='/' render={(props)=><Home history={props.history}/>} />
+          </Switch>
+        </AnimatePresence>
+      </Router>
+    );
+  }
 }
 
 export default App;
