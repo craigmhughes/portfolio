@@ -75,6 +75,12 @@ canvas {
   filter: invert(1);
 }
 
+.container, .Work {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
 .App, #root, body {
   min-height: 100vh;
 }

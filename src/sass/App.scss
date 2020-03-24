@@ -1,9 +1,16 @@
 @import './Home.scss';
+@import './Work.scss';
 
 canvas {
     width: 100%;
     background: #e3e3e3;
     filter: invert(1);
+}
+
+.container {
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
 }
 
 .App, #root, body {

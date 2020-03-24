@@ -25,7 +25,7 @@ export default function Home(){
                 </p>
                 <section className="Home-slide__link-list">
                     <a href={require("../assets/cv.pdf")}>View CV</a>
-                    <Link to="/">View Work</Link>
+                    <Link to="/work">View Work</Link>
                 </section>
 
                 <nav className="Home-slide__tag-list">
