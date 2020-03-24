@@ -52,9 +52,9 @@ export default function Home(){
                 </section>
 
                 <nav className="Home-slide__tag-list">
-                    <Link to="https://www.linkedin.com/in/craig-m-hughes/" className="Home-slide__tag-list-item">Linkedin</Link>
-                    <Link to="https://github.com/craigmhughes" className="Home-slide__tag-list-item">Github</Link>
-                    <Link to="https://twitter.com/hghscraig" className="Home-slide__tag-list-item">Twitter</Link>
+                    <a href="https://www.linkedin.com/in/craig-m-hughes/" className="Home-slide__tag-list-item">Linkedin</a>
+                    <a href="https://github.com/craigmhughes" className="Home-slide__tag-list-item">Github</a>
+                    <a href="https://twitter.com/hghscraig" className="Home-slide__tag-list-item">Twitter</a>
                 </nav>
             </motion.section>
             <section className="Home-slide__content" ref={canvasParent}>

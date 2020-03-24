@@ -1,7 +1,7 @@
 import * as THREE from 'three'
-import React, { Suspense, useEffect, useRef, useState, useMemo } from 'react'
-import { Canvas, useLoader, useFrame, useUpdate, useThree } from 'react-three-fiber'
-import { useSpring, config, animated } from 'react-spring/three'
+import React, { useState } from 'react'
+import { Canvas, useThree } from 'react-three-fiber'
+import { useSpring, animated } from 'react-spring/three'
 
 import PadHousing from './Models/PadHousing'
 import Pad from './Models/Pad'
