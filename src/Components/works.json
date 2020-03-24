@@ -44,7 +44,7 @@
         "date": "September 2019",
         "subtitle": "Summer project that was intended to be a messenger app which allows students of the same university connect and mentor each other",
         "links": [
-            "http://quaker-app.herokuapp.com",
+            null,
             "https://github.com/craigmhughes/bio-store"
         ]
     },
