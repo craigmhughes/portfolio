@@ -1,3 +1,29 @@
 .Work {
     @extend .container;
+    padding: 4em 0;
+
+    &__title {
+        padding: 1rem 0;
+        border-bottom: 2px solid #fff;
+        margin: 0;
+    }
+}
+
+.Work-item {
+    padding: 2em 0;
+    border-bottom: 1px solid #fff;
+
+    &__link-item {
+        padding: 1em;
+
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+
+    &__stack-icon {
+        height: 0.9em;
+        width: auto;
+        margin: 0 0.25rem;
+    }
 }

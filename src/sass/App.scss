@@ -15,4 +15,17 @@ canvas {
 
 .App, #root, body {
     min-height: 100vh;
+    font-family: 'Consolas', monospace, sans-serif;
+
+
+    background: #222;
+    color: #fff;
+}
+
+a {
+    color: inherit;
+
+    &.empty {
+        color: darken(#fff, 50%);
+    }
 }

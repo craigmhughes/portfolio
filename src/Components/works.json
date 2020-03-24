@@ -1,0 +1,75 @@
+[
+    {
+        "title": "Responsive Website Tester",
+        "stack": [
+            "react"
+        ],
+        "date": "March 2020",
+        "subtitle": "A site that allows the comparison of two views of a site of varying screen sizes.",
+        "links": [
+            "https://craigmhughes.github.io/responsive-web-tester/",
+            "https://github.com/craigmhughes/responsive-web-tester"
+        ]
+    },
+    {
+        "title": "Bio Store",
+        "stack": [
+            "vue"
+        ],
+        "date": "March 2020",
+        "subtitle": "Brochure site for a store specializing in biodegradable products",
+        "links": [
+            null,
+            "https://github.com/craigmhughes/bio-store"
+        ]
+    },
+    {
+        "title": "Quaker",
+        "stack": [
+            "laravel"
+        ],
+        "date": "January 2020",
+        "subtitle": "Quaker is a primary research tool developed for my Server and Client Side module. It follows the UX found in applications like Google Forms, which allow the creation of questionnaires with minimal pop-up menus and disruptions to the user.",
+        "links": [
+            "http://quaker-app.herokuapp.com",
+            "https://github.com/craigmhughes/bio-store"
+        ]
+    },
+    {
+        "title": "CampusChat",
+        "stack": [
+            "laravel",
+            "react"
+        ],
+        "date": "September 2019",
+        "subtitle": "Summer project that was intended to be a messenger app which allows students of the same university connect and mentor each other",
+        "links": [
+            "http://quaker-app.herokuapp.com",
+            "https://github.com/craigmhughes/bio-store"
+        ]
+    },
+    {
+        "title": "TidyTube (Currently Outdated)",
+        "stack": [
+            "vanilla-js"
+        ],
+        "date": "December 2018",
+        "subtitle": "This was my first Chrome Extension for disabling possibly distracting YouTube content.",
+        "links": [
+            "https://chrome.google.com/webstore/detail/tidytube/eillffkhnelgaaladkpjeggognlimgbl",
+            "https://github.com/craigmhughes/TidyTube"
+        ]
+    },
+    {
+        "title": "get-mp3.sh",
+        "stack": [
+            "bash"
+        ],
+        "date": "July 2019",
+        "subtitle": "Will download (from youtube link) and seperate album art into singles by changing album name to the track title. Only use if for some reason, like me, you prefer nice pictures instead of organised albums.",
+        "links": [
+            null,
+            "https://github.com/craigmhughes/get-mp3"
+        ]
+    }
+]

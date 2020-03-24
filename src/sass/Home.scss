@@ -3,10 +3,10 @@
     grid-template-columns: 4fr 6fr;
     grid-template-rows: 1fr;
     min-height: 100vh;
-    font-family: 'Consolas', monospace, sans-serif;
 
     &__content {
         background: #fff;
+        color: #222;
 
         &--first {
             @extend .Home-slide__content;

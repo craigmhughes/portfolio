@@ -1,5 +1,6 @@
 import React, {createRef} from 'react';
 import {Link} from 'react-router-dom';
+import {motion} from 'framer-motion';
 
 import RenderCanvas from './Canvas';
 
@@ -7,9 +8,31 @@ export default function Home(){
 
     const canvasParent = createRef();
 
+    // Animation object decides styles for each animation state.
+    const pageTransition = {
+        in: {
+            opacity: 1,
+            x: "-100%",
+        },
+        init: {
+            opacity: 1,
+            x: 0,
+        },
+        out: {
+            opacity: 0,
+            x: "-100%",
+        }
+    };
+
     return(
         <main className="Home-slide">
-            <section className="Home-slide__content--first">
+        
+            <motion.section className="Home-slide__content--first"
+            initial="in"
+            animate="init"
+            exit="out"
+            variants={pageTransition}
+            >
                 <img src={require("../assets/images/me.webp")} alt="Profile Shot" className="Home-slide__content-image"/>
                 <h1 className="Home-slide__content-title">Craig Hughes</h1>
                 <ul className="Home-slide__tag-list">
@@ -33,7 +56,7 @@ export default function Home(){
                     <Link to="https://github.com/craigmhughes" className="Home-slide__tag-list-item">Github</Link>
                     <Link to="https://twitter.com/hghscraig" className="Home-slide__tag-list-item">Twitter</Link>
                 </nav>
-            </section>
+            </motion.section>
             <section className="Home-slide__content" ref={canvasParent}>
                 <RenderCanvas parent={canvasParent}/>
             </section>
