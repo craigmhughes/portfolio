@@ -108,7 +108,7 @@ canvas {
 
 .App, #root, body {
   min-height: 100vh;
-  font-family: "Consolas", monospace, sans-serif;
+  font-family: "Consolas", monospace;
   background: #222;
   color: #fff;
 }
